@@ -7,5 +7,8 @@ export const metadata: Metadata = {
 };
 
 export default function Home() {
-	return <>Stuff Will Start Showing Up Soon!!!</>;
+	return (
+		<>
+		</>
+	);
 }
