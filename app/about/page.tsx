@@ -1,5 +1,3 @@
-import React from 'react';
-
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
@@ -10,7 +8,11 @@ export const metadata: Metadata = {
 
 const about = () => {
     return (
-        <div>About</div>
+        <>
+        
+        
+
+        </>
     )
 };
 
