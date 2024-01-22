@@ -1,5 +1,4 @@
-import React from 'react';
-
+import Treatments from '@/components/Treatments/index';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
@@ -9,7 +8,7 @@ export const metadata: Metadata = {
 };
 
 const treatments = () => {
-	return <div>Treatments</div>;
+	return <Treatments />
 };
 
 export default treatments;

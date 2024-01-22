@@ -1,4 +1,4 @@
-import React from 'react';
+import Approach from '@/components/Approach/index';
 
 import { Metadata } from 'next';
 
@@ -9,7 +9,9 @@ export const metadata: Metadata = {
 };
 
 const approach = () => {
-	return <div>Approach</div>;
+	return (
+		<Approach />
+	)
 };
 
 export default approach;

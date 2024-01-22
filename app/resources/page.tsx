@@ -1,5 +1,4 @@
-import React from 'react';
-
+import Resources from '@/components/Resources/index';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
@@ -9,7 +8,7 @@ export const metadata: Metadata = {
 };
 
 const resources = () => {
-	return <div>Resources</div>;
+	return <Resources />
 };
 
 export default resources;

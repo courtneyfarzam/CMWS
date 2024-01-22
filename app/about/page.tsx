@@ -1,3 +1,5 @@
+import AboutSection from '@/components/About/index';
+
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
@@ -10,7 +12,7 @@ const about = () => {
     return (
         <>
         
-        
+        <AboutSection />
 
         </>
     )
