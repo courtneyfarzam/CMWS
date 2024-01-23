@@ -1,4 +1,5 @@
 import AboutSection from '@/components/About/index';
+import Breadcrumb from '@/components/Common/Breadcrumb';
 
 import { Metadata } from 'next';
 
@@ -12,6 +13,7 @@ const about = () => {
     return (
         <>
         
+        <Breadcrumb />
         <AboutSection />
 
         </>

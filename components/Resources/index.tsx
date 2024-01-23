@@ -25,17 +25,15 @@ const Resources = () => {
 					</div>
 
 					<div className='flex flex-wrap'>
-						<div className='w-full max-w-[570px] lg:mb-0 lg:w-1/2'>
+						<div className='w-full lg:mb-0'>
 							<div className='mx-[-12] flex flex-wrap'>
-								<div className='w-full px-3 sm:w-1/2 lg:w-full xl:w-1/2'>
+								<div className='w-1/2 px-3'>
 									<List text='some text :) add more when you figure out what to list' />
 								</div>
-							</div>
-						</div>
-
-						<div className='w-full px-4 lg:w-1/2'>
-							<div className='relative mx-auto aspect-[25/24] max-w-[500px] lg:mr-0'>
-								<List text='some text :) add more when you figure out what to list' />
+								
+                                <div className='w-1/2 px-3'>
+                                    <List text='some text :) add more when you figure out what to list' />
+                                </div>
 							</div>
 						</div>
 					</div>
