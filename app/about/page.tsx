@@ -13,7 +13,10 @@ const about = () => {
     return (
         <>
         
-        <Breadcrumb />
+        <Breadcrumb 
+            pageName='About Me'
+            description='Here it is!'
+        />
         <AboutSection />
 
         </>

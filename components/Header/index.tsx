@@ -5,7 +5,6 @@ import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { useEffect, useState } from 'react';
 
-import ThemeToggler from './ThemeToggler';
 import navData from './navData'
 
 const Header = () => {
@@ -35,7 +34,7 @@ const Header = () => {
 			<>
 				<header className={`header left-0 top-0 z-40 flex w-full items-center
                 ${sticky
-                ? 'dark:bg-gray-dark dark:shadow-sticky-dark fixed z-[9999] bg-white !bg-opacity-80 shadow-sticky backdrop-blur-sm transition'
+                ? 'fixed z-[9999] bg-white !bg-opacity-80 shadow-sticky backdrop-blur-sm transition'
                 : 'absolute bg-transparent'
                 }
                 `}>
@@ -67,8 +66,7 @@ const Header = () => {
                                             className={`
                                                 relative block 
                                                 my-1.5 w-[30px] h-0.5
-                                                bg-black dark:bg-white
-                                                transition-all duration-300
+                                                bg-black transition-all duration-300
                                                 ${navbarOpen ? 'top-[7px] rotate-45' : ' '}
                                             `}
                                         />
@@ -76,8 +74,7 @@ const Header = () => {
                                             className={`
                                                 relative block 
                                                 my-1.5 w-[30px] h-0.5
-                                                bg-black dark:bg-white
-                                                transition-all duration-300
+                                                bg-black transition-all duration-300
                                                 ${navbarOpen ? 'opacity-0' : ' '}
                                             `}
                                         />{' '}
@@ -85,8 +82,7 @@ const Header = () => {
                                             className={`
                                                 relative block 
                                                 my-1.5 w-[30px] h-0.5
-                                                bg-black dark:bg-white
-                                                transition-all duration-300
+                                                bg-black transition-all duration-300
                                                 ${navbarOpen ? 'top-[-8px] -rotate-45' : ' '}
                                             `}
                                         />
@@ -100,8 +96,7 @@ const Header = () => {
                                             px-6 py-4
                                             w-[250px]
                                             rounded border-[.5px] 
-                                            border-body-color/50 bg-white
-                                            dark:border-body-color/20 dark:bg-dark
+                                            border-body-color/50 bg-white 
                                             duration-300
                                             lg:visible lg:opacity-100 
                                             lg:static lg:w-auto lg:border-none
@@ -122,8 +117,8 @@ const Header = () => {
                                                         flex py-2 text-base
                                                         lg:mr-0 lg:inline-flex lg:px-0 lg:py-6
                                                         ${usePathName === navItem.path 
-                                                        ? 'text-primary dark:text-white' 
-                                                        : 'text-dark hover:text-primary dark:text-white/70 dark:hover:text-white'}
+                                                        ? 'text-primary' 
+                                                        : 'text-dark hover:text-primary'}
                                                         `}
                                                         >
                                                             {navItem.title}
@@ -148,9 +143,6 @@ const Header = () => {
                                 >
                                     Schedule</Link>
 							</div>
-
-							{/* Dark Mode Toggler */}
-							<ThemeToggler />
 						</div>
 					</div>
 				</header>

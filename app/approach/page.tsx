@@ -1,4 +1,5 @@
 import Approach from '@/components/Approach/index';
+import Breadcrumb from '@/components/Common/Breadcrumb';
 
 import { Metadata } from 'next';
 
@@ -10,8 +11,14 @@ export const metadata: Metadata = {
 
 const approach = () => {
 	return (
-		<Approach />
-	)
+		<>
+			<Breadcrumb 
+				pageName='My Approach' 
+				description='Here it is!' 
+			/>
+			<Approach />
+		</>
+	);
 };
 
 export default approach;
