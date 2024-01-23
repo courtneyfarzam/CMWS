@@ -8,30 +8,9 @@ const Footer = () => {
 			<>
 				<footer className='relative z-10 bg-white pt-16 md:pt-20 lg:pt-12'>
 					<div className='container'>
-						<div className='-mx-4 flex flex-wrap justify-between m:m-auto sm:'>
+						<div className='-mx-4 flex flex-wrap justify-between'>
 							<div className='w-full px-4 md:w-1/2 lg:w-4/12 xl:w-5/12'>
-								<div className='mb-12 max-w-[360px]'>
-									<Link href='/' className='mb-8 inline-block'>
-										<Image
-											src='/images/placeholderLogo.png'
-											alt='logo'
-											className='w-full'
-											width={100}
-											height={70}
-										/>
-									</Link>
-
-									<p className='mb-9 text-base leading-relaxed text-body-color'>
-										Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-										Integer lobortis.
-									</p>
-
-									{/* Social Icons Here If Wanted */}
-								</div>
-							</div>
-
-							<div className='w-full px-4 md:w-1/2 lg:w-4/12 xl:w-3/12'>
-								<div className=''>
+								<div>
 									<h2 className='mb-10 text-xl font-bold text-black'>
 										Leah Shanks, LPC-MHSP
 									</h2>
@@ -52,6 +31,27 @@ const Footer = () => {
 									</div>
 								</div>
 							</div>
+
+							<div className='w-full px-4 md:w-1/2 lg:w-4/12 xl:w-3/12'>
+								<div className='mb-12 max-w-[360px]'>
+									<Link href='/' className='mb-8 inline-block'>
+										<Image
+											src='/images/placeholderLogo.png'
+											alt='logo'
+											className='w-full'
+											width={100}
+											height={70}
+										/>
+									</Link>
+
+									<p className='mb-9 text-base leading-relaxed text-body-color'>
+										Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+										Integer lobortis.
+									</p>
+
+									{/* Social Icons Here If Wanted */}
+								</div>
+							</div>
 						</div>
 
 						<div className='h-px w-full bg-gradient-to-r from-transparent via-[#D2D8E183] to-transparent' />
@@ -66,7 +66,7 @@ const Footer = () => {
 						</div>
 					</div>
 
-                    {/* The fun SVG returns */}
+					{/* The fun SVG returns */}
 					<div>
 						<span className='absolute left-0 top-0 z-[-1]'>
 							<svg

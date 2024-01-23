@@ -14,7 +14,7 @@ const Contact = () => {
 			<section id='contact' className='overflow-hidden py-16 md:py-20 lg:py-28'>
 				<div className='container'>
 					<div className='-mx-4 flex flex-wrap'>
-						<div className='w-full px-4'>
+						<div className='w-1/2 px-4 mx-auto'>
 							<div className='shadow-three mb-12 rounded-sm bg-white px-8 py-11 sm:p-[55px] lg:mb-5 lg:px-8 xl:p-[55px]'>
 								<h2 className='mb-3 text-2xl font-bold text-black sm:text-3xl lg:text-2xl xl:text-3xl'>
 									Contact Me
@@ -68,13 +68,21 @@ const Contact = () => {
 											</div>
 										</div>
 
-										<div className='w-full px-4 md:w-1/2'>
+										<div className='w-full px-4'>
 											<div className='mb-8'>
+												<label
+													htmlFor='message'
+													className='mb-3 block text-sm font-medium text-dark'
+												>
+													Your Message
+												</label>
+
 												<textarea
 													id='message'
 													name='message'
+													rows={5}
 													placeholder='Enter Your Message'
-													className='border-stroke rounded-sm border bg-[#f8f8f8] px-6 py-3 text-base text-body-color outline-none focus:border-primary'
+													className='border-stroke w-full resize-none rounded-sm border bg-[#f8f8f8] px-6 py-3 text-base text-body-color outline-none focus:border-primary'
 												/>
 
 												<ValidationError
@@ -85,15 +93,15 @@ const Contact = () => {
 											</div>
 										</div>
 
-                                        <div className='w-full px-4'>
-                                            <button 
-                                                type='submit' 
-                                                disabled={state.submitting}
-                                                className='shadow-submit rounded-lg bg-primary px-9 py-4 text-base font-medium text0white duration-300 hover:bg-primary/90'
-                                            >
-                                                Send
-                                            </button>
-                                        </div>
+										<div className='w-full px-4'>
+											<button
+												type='submit'
+												disabled={state.submitting}
+												className='shadow-submit rounded-lg bg-primary px-9 py-4 text-base font-medium text-white duration-300 hover:bg-primary/90'
+											>
+												Send
+											</button>
+										</div>
 									</div>
 								</form>
 							</div>
