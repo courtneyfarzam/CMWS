@@ -1,15 +1,12 @@
-import type { Metadata } from 'next';
-import { Inter } from 'next/font/google';
-import '../styles/index.css';
+'use client';
 
 import Header from '@/components/Header';
+import Footer from '@/components/Footer';
+import '../styles/index.css';
+
+import { Inter } from 'next/font/google';
 
 const inter = Inter({ subsets: ['latin'] })
-
-export const metadata: Metadata = {
-  title: 'Leah Shanks | CMWS',
-  description: '',
-}
 
 export default function RootLayout({
   children,
@@ -18,9 +15,12 @@ export default function RootLayout({
 }) {
   return (
     <html suppressHydrationWarning lang="en">
+
+      <head />
       <body className={inter.className}>
-        <Header />
-        {children}
+          <Header />
+          {children}
+          <Footer />
       </body>
     </html>
   )
