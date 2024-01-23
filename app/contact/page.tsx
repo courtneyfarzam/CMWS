@@ -1,4 +1,5 @@
-import React from 'react';
+import Contact from '@/components/Contact/index';
+import Breadcrumb from '@/components/Common/Breadcrumb';
 
 import { Metadata } from 'next';
 
@@ -9,7 +10,15 @@ export const metadata: Metadata = {
 };
 
 const contact = () => {
-	return <div>Contact</div>;
+	return (
+		<>
+			<Breadcrumb 
+				pageName='Contact' 
+				description='Here it is!' 
+			/>
+			<Contact />
+		</>
+	);
 };
 
 export default contact;

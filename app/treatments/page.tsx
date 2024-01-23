@@ -1,4 +1,6 @@
 import Treatments from '@/components/Treatments/index';
+import Breadcrumb from '@/components/Common/Breadcrumb';
+
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
@@ -8,7 +10,17 @@ export const metadata: Metadata = {
 };
 
 const treatments = () => {
-	return <Treatments />
+	return (
+		<>
+		
+		<Breadcrumb 
+            pageName='Treatments'
+            description='Here it is!'
+        />
+		<Treatments />
+
+		</>
+	)
 };
 
 export default treatments;

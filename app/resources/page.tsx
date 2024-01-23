@@ -1,4 +1,6 @@
 import Resources from '@/components/Resources/index';
+import Breadcrumb from '@/components/Common/Breadcrumb';
+
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
@@ -8,7 +10,18 @@ export const metadata: Metadata = {
 };
 
 const resources = () => {
-	return <Resources />
+	return (
+		<>
+		
+		<Breadcrumb 
+            pageName='Resources'
+            description='Here it is!'
+        />
+		<Resources />
+
+		
+		</>
+	)
 };
 
 export default resources;
