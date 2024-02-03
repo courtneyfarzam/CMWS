@@ -36,7 +36,7 @@ const navData: Nav[] = [
 		title: 'Contact',
 		path: '/contact',
 		newTab: false,
-	},
+	}
 ];
 
 export default navData;
